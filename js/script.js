@@ -3,7 +3,6 @@ var selectedRating = 0;
 var indexList = [];
 $(document).ready(function () {
 	pickRestaurant();
-
     /****************************************************************
 							  PRICE HOVER
  	****************************************************************/
@@ -131,7 +130,7 @@ function pickRestaurant(){
 		}
 
 		//validateRestaurants(restaurants, price, rating, distance, cuisine)
-		validateRestaurants(json.restaurants, 2, 4, null, null);
+		validateRestaurants(json.restaurants, getPrice(), getRating(), null, null);
 
 		//Random number
 		var pickedIndex = false;
@@ -275,6 +274,40 @@ function calcDistance(startLat,startLong,destLat,destLong) {
   return distance;
 }
 
+function getPrice(){
+	var icon = $("#price5").css("color");
+	if(icon == "rgb(255, 0, 0)") return 5;
+
+	icon = $("#price4").css("color");
+	if(icon == "rgb(255, 0, 0)") return 4;
+
+	icon = $("#price3").css("color");
+	if(icon == "rgb(255, 0, 0)") return 3;
+
+	icon = $("#price2").css("color");
+	if(icon == "rgb(255, 0, 0)") return 2;
+
+	icon = $("#price1").css("color");
+	if(icon == "rgb(255, 0, 0)") return 1;
+
+	return null;
+}
+
 function getRating(){
-	var icon1 = $("#star1").css("color");
+	var icon = $("#star5").css("color");
+	if(icon == "rgb(255, 0, 0)") return 5;
+
+	icon = $("#star4").css("color");
+	if(icon == "rgb(255, 0, 0)") return 4;
+
+	icon = $("#star3").css("color");
+	if(icon == "rgb(255, 0, 0)") return 3;
+
+	icon = $("#star2").css("color");
+	if(icon == "rgb(255, 0, 0)") return 2;
+
+	icon = $("#star1").css("color");
+	if(icon == "rgb(255, 0, 0)") return 1;
+
+	return null;
 }
