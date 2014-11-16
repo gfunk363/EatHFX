@@ -1,0 +1,72 @@
+{
+	"restaurants":[
+		{
+			"name":"Ryan Duffy's",
+			"address":"1650 Bedford Row",
+			"latitude":"44.646817",
+			"longitude":"-63.571886",
+			"phone":"(902) 421-1116",
+			"hours":{
+				"m":"6:30am - 10:00pm",
+				"tu":"6:30am - 10:00pm",
+				"w":"6:30am - 10:00pm",
+				"th":"6:30am - 10:00pm",
+				"f":"6:30am - 10:00pm",
+				"sa":"7:00am - 10:00pm",
+				"su":"7:00am - 10:00pm"
+			},
+			"website":"www.ryanduffys.ca",
+			"cuisines":[
+				"Steak",
+				"American"
+			],
+			"rating":3,
+			"price":3
+		},
+		{
+			"name":"Krave Burger",
+			"address":"5680 Spring Garden Road",
+			"latitude":"44.642274",
+			"longitude":"-63.579011",
+			"phone":"(902) 407-5728",
+			"hours":{
+				"m":"11:00am - 10:00pm",
+				"tu":"11:00am - 10:00pm",
+				"w":"11:00am - 10:00pm",
+				"th":"11:00am - 10:00pm",
+				"f":"11:00am - 10:00pm",
+				"sa":"11:00am - 10:00pm",
+				"su":"11:00am - 10:00pm"
+			},
+			"website":"www.kraveburger.com",
+			"cuisines":[
+				"Fast Food",
+				"Burgers"
+			],
+			"rating":4,
+			"price":2
+		},
+		{
+			"name":"Bicycle Thief",
+			"address":"1475 Lower Water Street",
+			"latitude":"44.643352",
+			"longitude":"-63.569112",
+			"phone":"(902) 425-7993",
+			"hours":{
+				"m":"11:00am - 10:00pm",
+				"tu":"11:00am - 10:00pm",
+				"w":"11:00am - 10:00pm",
+				"th":"11:00am - 10:00pm",
+				"f":"11:00am - 10:00pm",
+				"sa":"5:00pm - 10:00pm",
+				"su":"Closed"
+			},
+			"website":"www.bicyclethief.ca",
+			"cuisines":[
+				"Italian"
+			],
+			"rating":4,
+			"price":3
+		}
+	]
+}
