@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+	
+	
+	<meta content="charset=utf-8">
+	<title>FlexSlider 2</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+
+  <!-- Demo CSS -->
+	<link rel="stylesheet" href="css/demo.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="flexslider.css" type="text/css" media="screen" />
+
+	<!-- Modernizr -->
+  <script src="js/modernizr.js"></script>
+
+
+ <!-- jQuery -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+  <!-- FlexSlider -->
+  <script defer src="jquery.flexslider.js"></script>
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        controlNav: "thumbnails",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+
+  <!-- Syntax Highlighter -->
+  <script type="text/javascript" src="js/shCore.js"></script>
+  <script type="text/javascript" src="js/shBrushXml.js"></script>
+  <script type="text/javascript" src="js/shBrushJScript.js"></script>
+
+  <!-- Optional FlexSlider Additions -->
+  <script src="js/jquery.easing.js"></script>
+  <script src="js/jquery.mousewheel.js"></script>
+  <script defer src="js/demo.js"></script>
+
+
+
+
+  <title>ChefTML</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/style.css">
+	<!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body>
+ 	
+<div class="header"> 
+<div class="logo">
+<img src="images/logo.png" width="30px" height="20px">
+</div>
+<h1>Eat HFX</h1>
+
+<div class="button">
+<button>Login/SignUp</button>
+</div>
+</div>	
+ 	
+ 	
+<div class="content"> 	
+ 	
+ 	<h2>Restaurant</h2>
+
+<div class="info">
+
+<div class="cost">
+</div>
+
+<div class="distance">
+</div>
+
+<div class="rating">
+</div>
+
+</div>
+
+<div class="about">
+<ul>
+<strong>Cuisine:</strong>Italian
+</ul>
+<ul>
+<strong>Website:</strong>www.test.com
+</ul>
+<ul>
+<strong>Address:</strong>1477 Lower Water St
+</ul>
+<ul>
+<strong>Hours:</strong>M-F 8:00a-10:pm Sat-SUN CLosed
+</ul>
+
+
+<div class="images">
+   	 <section class="slider">
+        <div class="flexslider">
+          <ul class="slides">
+            <li data-thumb="images/kitchen_adventurer_cheesecake_brownie.jpg">
+  	    	    <img src="images/kitchen_adventurer_cheesecake_brownie.jpg" />
+  	    		</li>
+  	    		<li data-thumb="images/kitchen_adventurer_lemon.jpg">
+  	    	    <img src="images/kitchen_adventurer_lemon.jpg" />
+  	    		</li>
+  	    		<li data-thumb="images/kitchen_adventurer_donut.jpg">
+  	    	    <img src="images/kitchen_adventurer_donut.jpg" />
+  	    		</li>
+  	    		<li data-thumb="images/kitchen_adventurer_caramel.jpg">
+  	    	    <img src="images/kitchen_adventurer_caramel.jpg" />
+  	    		</li>
+          </ul>
+        </div>
+      </section>
+      
+</div>
+  </div>
+
+ 
+
+<div>
+<div class="map">
+<img src="images/map.png" width="80%" height="40%">
+</div>
+</div>
+</body>
