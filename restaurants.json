@@ -67,6 +67,951 @@
 			],
 			"rating":4,
 			"price":3
+		},
+		{
+			"name":"2 Doors Down",
+			"address":"1533 Barrington",
+			"latitude":"44.644875",
+			"longitude":"-63.572705",
+			"phone":"(902) 422-4224",
+			"hours":{
+				"m":"11:00 am - 10:00 pm",
+				"tu":"11:00 am - 10:00 pm",
+				"w":"11:00 am - 10:00 pm",
+				"th":"11:00 am - 10:00 pm",
+				"f":"11:00 am - 10:00 pm",
+				"sa":"11:00 am - 10:00 pm",
+				"su":"11:00 am - 10:00 pm"
+			},
+			"website":"go2doorsdown.com",
+			"cuisines":[
+				"Canadian",
+				"Compfort"
+			],
+			"rating":4,
+			"price":2
+		},
+		{
+			"name":"EDNA Restaurant",
+			"address":"2053 Gottingen",
+			"latitude":"44.651454",
+			"longitude":"-63.582292",
+			"phone":"(902) 431-5683",
+			"hours":{
+				"m":"closed",
+				"tu":"5.00pm-10.00pm",
+				"w":"5.00pm-10.00pm",
+				"th":"5.00pm-11.00pm",
+				"f":"5.00pm-11.00pm",
+				"sa":"10am-2.30pm 5pm-10pm",
+				"su":"10am-2.30pm 5pm-10pm"
+			},
+			"website":"ednarestaurant.com",
+			"cuisines":"ednarestaurant.com",
+			"rating":4,
+			"price":3
+		},
+		{
+			"name":"King Wah Restaurant",
+			"address":"6430 Quinpool Rd",
+			"latitude":"44.644147",
+			"longitude":"-63.601",
+			"phone":"(902) 423-2587",
+			"hours":{
+				"m":"4:00 pm - 10:00 pm",
+				"tu":"4:00 pm - 10:00 pm",
+				"w":"4:00 pm - 10:00 pm",
+				"th":"12:00 pm - 10:00 pm",
+				"f":"12:00 pm - 11:00 pm",
+				"sa":"1:00 pm - 11:00 pm",
+				"su":"4:00 pm - 10:00 pm"
+			},
+			"website":"kingwah.ca",
+			"cuisines":"Chinese",
+			"rating":3,
+			"price":2
+		},
+		{
+			"name":"The Foggy Goggle",
+			"address":"1667 Argyle st",
+			"latitude":"44.646637",
+			"longitude":"-63.574399",
+			"phone":"(902) 444-1414",
+			"hours":{
+				"m":"11.30am- 12.00pm",
+				"tu":"11.30am- 12.00pm",
+				"w":"11.30am- 12.00pm",
+				"th":"11.30am- 12.00pm",
+				"f":"11.30am-2.00am",
+				"sa":"11.30am-2.00am",
+				"su":"12.00pm - 12.00am"
+			},
+			"website":"thefoggygoggle.ca",
+			"cuisines":[
+				"Canadian",
+				"Pubs"
+			],
+			"rating":4,
+			"price":2
+		},
+		{
+			"name":"Saege Bistro",
+			"address":"5883 Spring Garden Road",
+			"latitude":"44.641357",
+			"longitude":"-63.584226",
+			"phone":"(902) 429-1882",
+			"hours":{
+				"m":"11:30 am - 3:00 pm",
+				"tu":"11:30 am - 9:00 pm",
+				"w":"11:30 am - 9:00 pm",
+				"th":"11:30 am - 9:00 pm",
+				"f":"11:30 am - 9:00 pm",
+				"sa":"9:30 am - 9:00 pm",
+				"su":"9:30 am - 8:00 pm"
+			},
+			"website":"saege.ca",
+			"cuisines":[
+				"Italian",
+				"Canadian"
+			],
+			"rating":3,
+			"price":3
+		},
+		{
+			"name":"Freeman’s Little New York - Quinpool",
+			"address":"6092 Quinpool Road",
+			"latitude":"44.646396",
+			"longitude":"-63.592999",
+			"phone":"(902) 429-0241",
+			"hours":{
+				"m":"9:00 am - 5:00 am",
+				"tu":"9:00 am - 5:00 am",
+				"w":"9:00 am - 5:00 am",
+				"th":"9:00 am - 5:00 am",
+				"f":"9:00 am - 5:00 am",
+				"sa":"9:00 am - 5:00 am",
+				"su":"9:00 am - 5:00 am"
+			},
+			"website":"freemanspizza.ca",
+			"cuisines":[
+				"Pubs",
+				"Pizza"
+			],
+			"rating":4,
+			"price":2
+		},
+		{
+			"name":"Morris East ",
+			"address":"5212 Morris Street",
+			"latitude":"44.641596",
+			"longitude":"-63.57155",
+			"phone":"(902) 444-7663",
+			"hours":{
+				"m":"closed",
+				"tu":"11:30am-2:30pm 5pm-10pm",
+				"w":"11:30am-2:30pm 5pm-10pm",
+				"th":"11:30am-2:30pm 5pm-10pm",
+				"f":"11:30am-2:30pm 5pm-10pm",
+				"sa":"10am-2pm 5pm-9pm",
+				"su":"10am-2pm 5pm-9pm"
+			},
+			"website":"morriseast.com",
+			"cuisines":"Pizza",
+			"rating":4,
+			"price":2
+		},
+		{
+			"name":"The Coastal Cafe",
+			"address":"2731 Robie Street",
+			"latitude":"44.656552",
+			"longitude":"-63.59754",
+			"phone":"(902) 405-4022",
+			"hours":{
+				"m":"8:00am - 3:00pm",
+				"tu":"8:00am - 3:00pm",
+				"w":"8:00am - 3:00pm",
+				"th":"8:00am - 3:00pm",
+				"f":"8:00am - 3:00pm",
+				"sa":"8:00am - 3:00pm",
+				"su":"closed"
+			},
+			"website":"thecoastal.ca/index.html",
+			"cuisines":[
+				"Breakfast",
+				"Brunch"
+			],
+			"rating":4,
+			"price":2
+		},
+		{
+			"name":"Darrell’s Restaurant",
+			"address":"5576 Fenwick St",
+			"latitude":"44.637889",
+			"longitude":"-63.573706",
+			"phone":"(902) 492-2344",
+			"hours":{
+				"m":"11:00 am - 10:00 pm",
+				"tu":"11:00 am - 10:00 pm",
+				"w":"11:00 am - 10:00 pm",
+				"th":"11:00 am - 10:00 pm",
+				"f":"11:00 am - 10:00 pm",
+				"sa":"11:00 am - 10:00 pm",
+				"su":"11:00 am - 10:00 pm"
+			},
+			"website":"darrellsrestaurants.com",
+			"cuisines":[
+				"Diners",
+				"Burgers"
+			],
+			"rating":4,
+			"price":2
+		},
+		{
+			"name":"9 + Nine",
+			"address":"480 Parkland Drive",
+			"latitude":"42.655465",
+			"longitude":"-83.142313",
+			"phone":"(902) 431-7575",
+			"hours":{
+				"m":"11am-2pm 5pm-9pm",
+				"tu":"11am-2pm 5pm-9pm",
+				"w":"11am-2pm 5pm-9pm",
+				"th":"11am-2pm 5pm-9pm",
+				"f":"11am-2pm 5pm-9pm",
+				"sa":"11am-2pm 4:30pm-9pm",
+				"su":"4:30pm-9:30pm"
+			},
+			"website":"9plus9.ca",
+			"cuisines":"Chinese",
+			"rating":4,
+			"price":2
+		},
+		{
+			"name":"Ace Burger Co.",
+			"address":"2605 Agricola Street",
+			"latitude":"44.655482",
+			"longitude":"-63.593736",
+			"phone":"(902) 406-8050",
+			"hours":{
+				"m":"11:30am-9:00pm",
+				"tu":"11:30am-9:00pm",
+				"w":"11:30am-9:00pm",
+				"th":"11:30am-9:00pm",
+				"f":"11:30am-10:00pm",
+				"sa":"11:30am-9:00pm",
+				"su":"12:00am-9:00pm"
+			},
+			"website":"aceburger.ca",
+			"cuisines":"Burgers",
+			"rating":5,
+			"price":2
+		},
+		{
+			"name":"Blue Olive",
+			"address":"6196 Quinpool Road",
+			"latitude":"44.645729",
+			"longitude":"-63.595768",
+			"phone":"(902) 407-3000",
+			"hours":{
+				"m":"11:00am - 10:00pm",
+				"tu":"11:00am - 10:00pm",
+				"w":"11:00am - 10:00pm",
+				"th":"11:00am - 10:00pm",
+				"f":"11:00am - 10:00pm",
+				"sa":"11:00am - 10:00pm",
+				"su":"4:00pm - 9:00pm"
+			},
+			"website":"blueolivegreektaverna.com",
+			"cuisines":"Greek",
+			"rating":4,
+			"price":2
+		},
+		{
+			"name":"The Fireside",
+			"address":"1500 Brunswick Street",
+			"latitude":"44.643864",
+			"longitude":"-63.57524",
+			"phone":"(902) 423-5995",
+			"hours":{
+				"m":"11:30am-12:00am",
+				"tu":"11:30am-12:00am",
+				"w":"11:30am-12:00am",
+				"th":"11:30am-12:00am",
+				"f":"11:30-1:00pm",
+				"sa":"4:00pm-1:00am",
+				"su":"4:00pm - 11:00pm"
+			},
+			"website":"thefireside.ca",
+			"cuisines":"Canadian",
+			"rating":3,
+			"price":2
+		},
+		{
+			"name":"Relish Gourmet Burgers",
+			"address":"6024 Quinpool Road",
+			"latitude":"44.646826",
+			"longitude":"-63.591302",
+			"phone":"(902) 474-4152",
+			"hours":{
+				"m":"11:30am-9:30pm",
+				"tu":"11:30am-9:30pm",
+				"w":"11:30am-9:30pm",
+				"th":"11:30am-9:30pm",
+				"f":"11:30am-9:30pm",
+				"sa":"11:30am-9:30pm",
+				"su":"11:30am-9:30pm"
+			},
+			"website":"relishyou.ca",
+			"cuisines":"Burgers",
+			"rating":3,
+			"price":2
+		},
+		{
+			"name":"Two If By Sea",
+			"address":"1869 Upper Water Street",
+			"latitude":"44.649983",
+			"longitude":"-63.573348",
+			"phone":"(902) 492-4600",
+			"hours":{
+				"m":"7:30 am - 5:00 pm",
+				"tu":"7:30 am - 5:00 pm",
+				"w":"7:30 am - 5:00 pm",
+				"th":"7:30 am - 5:00 pm",
+				"f":"7:30 am - 5:00 pm",
+				"sa":"8:00 am - 5:00 pm",
+				"su":"closed"
+			},
+			"website":"twoifbyseacafe.ca",
+			"cuisines":[
+				"Coffee & Tea",
+				"Bakeries"
+			],
+			"rating":5,
+			"price":2
+		},
+		{
+			"name":"Julien’s Patisserie, Bakery & Cafe",
+			"address":"5517 Young Street",
+			"latitude":"44.662307",
+			"longitude":"-63.599077",
+			"phone":"(902) 455-9717",
+			"hours":{
+				"m":"7:30 am - 4:00 pm",
+				"tu":"7:30 am - 5:30 pm",
+				"w":"7:30 am - 5:30 pm",
+				"th":"7:30 am - 5:30 pm",
+				"f":"7:30 am - 5:30 pm",
+				"sa":"7:30 am - 5:00 pm",
+				"su":"7:30 am - 5:00 pm"
+			},
+			"website":"julienshydrostone.ca",
+			"cuisines":[
+				"Bakeries",
+				"Sandwiches"
+			],
+			"rating":4,
+			"price":1
+		},
+		{
+			"name":"Chef Abod",
+			"address":"3217 Kempt Rd",
+			"latitude":"44.660422",
+			"longitude":"-63.60604",
+			"phone":"(902) 455-3881",
+			"hours":{
+				"m":"11:00 am - 9:00 pm",
+				"tu":"11:00 am - 9:00 pm",
+				"w":"11:00 am - 9:00 pm",
+				"th":"11:00 am - 9:00 pm",
+				"f":"11:00 am - 9:00 pm",
+				"sa":"11:00 am - 10:00 pm",
+				"su":"2:30 pm - 8:30 pm"
+			},
+			"website":"chefabod.com",
+			"cuisines":[
+				"Halal",
+				"Middle Eastern"
+			],
+			"rating":4,
+			"price":1
+		},
+		
+		{
+			"name":"Il Mercato",
+			"address":"Sunnyside Mall, 1595 Bedford Hwy",
+			"latitude":"44.733111",
+			"longitude":"-63.654261",
+			"phone":"(902) 832-4531",
+			"hours":{
+				"m":"11:00am - 10:00pm",
+				"tu":"11:00am - 10:00pm",
+				"w":"11:00am - 10:00pm",
+				"th":"11:00am - 10:00pm",
+				"f":"11:00am - 11:00pm",
+				"sa":"11:00am - 11:00pm",
+				"su":"Close"
+			},
+			"website":"www.il-mercato.ca",
+			"cuisines":[
+				"Italian"
+				
+			],
+			"rating":5,
+			"price":3
+		},
+{
+			"name":"Chives Canadian Bistro",
+			"address":"1537 Barrington street",
+			"latitude":"44.645002",
+			"longitude":"-63.572786",
+			"phone":"(902) 420-9626",
+			"hours":{
+				"m":"5:00pm - 9:30pm",
+				"tu":"5:00pm - 9:30pm",
+				"w":"5:00pm - 9:30pm",
+				"th":"5:00pm - 9:30pm",
+				"f":"5:00pm - 9:30pm",
+				"sa":"5:00pm - 9:30pm",
+				"su":"5:00pm - 9:30pm"
+			},
+			"website":"www.chives.ca",
+			"cuisines":[
+				"Canadian"
+			
+			],
+			"rating":4,
+			"price":3
+		},
+
+{
+			"name":"The Press Gang",
+			"address":"5218 Prince street",
+			"latitude":"44.647021",
+			"longitude":"-63.574518",
+			"phone":"(902) 423-8816",
+			"hours":{
+				"m":"5:00pm - 10:00pm",
+				"tu":"5:00pm - 10:00pm",
+				"w":"5:00pm - 10:00pm",
+				"th":"5:00pm - 10:00pm",
+				"f":"5:00pm - 10:00pm",
+				"sa":"5:00pm - 10:00pm",
+				"su":"5:00pm - 10:00pm"
+			},
+			"website":"www.thepressgang.net",
+			"cuisines":[
+				"Bars",
+				"Seafood"
+			
+			],
+			"rating":4,
+			"price":3
+		},
+
+{
+			"name":"Wasabi House",
+			"address":"6403 Quinpool Road",
+			"latitude":"44.644598",
+			"longitude":"-63.600455",
+			"phone":"(902) 429-3300",
+			"hours":{
+				"m":"11:00am - 11:00pm",
+				"tu":"11:00am - 11:00pm",
+				"w":"11:00am - 11:00pm",
+				"th":"11:00am - 11:00pm",
+				"f":"11:00am - 11:00pm",
+				"sa":"11:00am - 11:00pm",
+				"su":"11:00am - 11:00pm"
+			},
+			"website":"www.wasabihouse.ca",
+			"cuisines":[
+				"Sushi"
+			
+			],
+			"rating":4,
+			"price":2
+		},
+
+{
+			"name":"Stories Fine Dining",
+			"address":"5184 Morris Street",
+			"latitude":"44.641722",
+			"longitude":"-63.570779",
+			"phone":"(902) 444-4400",
+			"hours":{
+				"m":"5:00pm - 9:00pm",
+				"tu":"5:00pm - 9:00pm",
+				"w":"5:00pm - 9:00pm",
+				"th":"5:00pm - 9:00pm",
+				"f":"5:00pm - 9:00pm",
+				"sa":"5:00pm - 9:00pm",
+				"su":"5:00pm - 9:30pm"
+			},
+			"website":"www.storiesdining.com",
+			"cuisines":[
+				"Canadian"
+			
+			],
+			"rating":5,
+			"price":4
+		},
+
+{
+			"name":"Durty Nelly’s",
+			"address":"1660 Argyle st",
+			"latitude":"44.646402",
+			"longitude":"-63.574472",
+			"phone":"(902) 406-7640",
+			"hours":{
+				"m": "11:30am - 1:00am",
+				"tu":"11:30am - 1:00am",
+				"w":"11:30am - 1:00am",
+				"th":"11:30am - 1:00am",
+				"f":"11:30am - 1:00am",
+				"sa":"11:30am - 2:00am",
+				"su":"11:30am - 2:00am"
+			},
+			"website":"www.durtynellys.ca",
+			"cuisines":[
+				"Irish",
+				"Pub"
+			
+			],
+			"rating":4,
+			"price":2
+		},
+
+{
+			"name":"Thai Ivory Cuisine",
+			"address":"6303 Quinpool Road",
+			"latitude":"44.645134",
+			"longitude":"-63.598886",
+			"phone":"(902) 4405-8424",
+			"hours":{
+				"m":"10:00am - 9:30pm",
+				"tu":"10:00am - 9:30pm",
+				"w":"10:00am - 9:30pm",
+				"th":"10:00am - 9:30pm",
+				"f":"10:00am - 9:30pm",
+				"sa":"10:00am - 9:30pm",
+				"su":"10:00am - 9:30pm"
+			},
+			"website":"www.thaiivoryvusine.ca",
+			"cuisines":[
+				"Thai"
+				
+			],
+			"rating":4,
+			"price":2
+		},
+
+	{
+			"name":"Burrito Jax",
+			"address":"5215 Blowers Street",
+			"latitude":"44.645204",
+			"longitude":"-63.573555",
+			"phone":"(902) 406-0088",
+			"hours":{
+				"m":"11:00am - 9:30pm",
+				"tu":"11:00am - 9:30pm",
+				"w":"11:00am - 9:30pm",
+				"th":"6:30am - 3:30pm",
+				"f":"6:30am - 3:30pm",
+				"sa":"6:30am - 3:30pm",
+				"su":"12:00pm - 6:00pm"
+			},
+			"website":"www.burritojax.ca",
+			"cuisines":[
+				"Mexican"
+				
+			],
+			"rating":4,
+			"price":1
+		},
+
+
+{
+			"name":"Your father’s Mustache",
+			"address":"5886 Spring Garden Road",
+			"latitude":"44.642272",
+			"longitude":"-63.579238",
+			"phone":"(902) 423-6766",
+			"hours":{
+				"m":"10:00am - 12:00am",
+				"tu":"10:00am - 12:00am",
+				"w":"10:00am - 12:00am",
+				"th":"10:00am - 12:00amm",
+				"f":"10:00am - 1:00am",
+				"sa":"10:00am - 1:00am",
+				"su":"10:00am - 1:00am"
+			},
+			"website":"www.yourfathersmustache.ca",
+			"cuisines":[
+				"Pub",
+				"American"
+			],
+			"rating":4,
+			"price":2
+		},
+
+	{
+			"name":"Sweet Hereafter",
+			"address":"6148 Quinpool Road",
+			"latitude":"44.646029",
+			"longitude":"-63.594502",
+			"phone":"(902) 404-8001",
+			"hours":{
+				"m":"12:00pm - 10:00pm",
+				"tu":"12:00pm - 10:00pm",
+				"w":"12:00pm - 10:00pm",
+				"th":"12:00pm - 11:00pm",
+				"f":"12:00pm - 11:00pm",
+				"sa":"12:00pm - 11:00pm",
+				"su":"Closed"
+			},
+			"website":"www.sweethereafter.ca",
+			"cuisines":[
+				"Bakeries",
+				"Vegan",
+				"Gluten-Free"
+			],
+			"rating":4,
+			"price":2
+		},
+
+{
+			"name": "Fruition",
+			"address":"1209 Marginal Road",
+			"latitude":"44.640212",
+			"longitude":"-63.565863",
+			"phone":"(902) 266-3858",
+			"hours":{
+				"m":"Closed",
+				"tu":"10:00am - 5:00pm",
+				"w":"10:00am - 5:00pm",
+				"th":"10:00am - 5:00pm",
+				"f":"10:00am - 5:00pm",
+				"sa":"7:00am - 3:00pm",
+				"su":"9:00am - 3:00pm"
+			},
+			"website":"www.come2fruition.ca",
+			"cuisines":[
+				"Gluten-Free",
+				"Juice Bar"
+			],
+			"rating":5,
+			"price":2
+		},
+
+		{
+			"nam":"Heartwood",
+			"address":"6250 Quinpool Road",
+			"latitude":"44.645272",
+			"longitude":"-63.597233",
+			"phone":"(902) 425-2808",
+			"hours":{
+				"m":"10:00am - 9:00pm",
+				"tu":"10:00am - 9:00pm",
+				"w":"10:00am - 9:00pm",
+				"th":"10:00am - 10:00pm",
+				"f":"10:00am - 10:00pm",
+				"sa":"10:00am - 10:00pm",
+				"su":"10:00am - 3:00pm"
+			},
+			"website":"www.heartwoodbakerycafe.ca",
+			"cuisines":[
+				"Vegetarian",
+				"Vegan",
+				"Gluten-Free"
+			],
+			"rating":4,
+			"price":2
+		},
+
+		{
+			"name":"Mid East Food Centre",
+			"address":"2595 Agricola Street",
+			"latitude":"44.645272",
+			"longitude":"-63.593414",
+			"phone":"(902) 492-0958",
+			"hours":{
+				"m":"10:00am - 7:00pm",
+				"tu":"10:00am - 7:00pm",
+				"w":"10:00am - 7:00pm",
+				"th":"10:00am - 7:00pm",
+				"f":"10:00am - 7:00pm",
+				"sa":"10:00am - 7:00pm",
+				"su":"12:00pm - 5:00pm"
+			},
+			"website":"www.mideastfood.ca",
+			"cuisines":[
+				"Middle Eastern",
+				"Ethnic Food",
+				"Grocery"
+			],
+			"rating":4,
+			"price":1
+		},
+		{
+			"name":"Mezza Lebanese Restaurant",
+			"address":"6386 Quinpool Road",
+			"latitude":"44.644465",
+			"longitude":"-63.59985",
+			"phone":"(902) 444-3914",
+			"hours":{
+				"m":"Closed",
+				"tu":"11:30am - 10:00pm",
+				"w":"11:30am - 10:00pm",
+				"th":"11:30am - 10:00pm",
+				"f":"11:30am - 10:00pm",
+				"sa":"11:30am - 10:00pm",
+				"su":"11:30am - 10:00pm"
+			},
+			"website":"www.mezzarestaurant.com",
+			"cuisines":[
+				"Lebanese"
+				
+			],
+			"rating":4,
+			"price":2
+		},
+		{
+			"name":"Rockbottom Brewpup",
+			"address":"5686 Spring Garden Road",
+			"latitude":"44.642272",
+			"longitude":"-63.579238",
+			"phone":"(902) 423-2938",
+			"hours":{
+				"m":"11:30am - 12:00am",
+				"tu":"11:30am - 12:00am",
+				"w":"11:30am - 12:00am",
+				"th":"11:30am - 2:00am",
+				"f":"11:30am - 2:00am",
+				"sa":"11:30am - 2:00am",
+				"su":"4:00pm - 12:00am"
+			},
+			"website":"www.rockbottombrewpub.ca",
+			"cuisines":[
+				"Pubs",
+				"Breweries"
+				
+			],
+			"rating":3,
+			"price":2
+		},
+		{
+			"name":"The Seahorse Tavern",
+			"address":"1665 Argyle Street",
+			"latitude":"44.646601",
+			"longitude":"-63.574412",
+			"phone":"(902) 423-7200",
+			"hours":{
+				"m":"Closed",
+				"tu":"Closed",
+				"w":"Closed",
+				"th":"4:00pm - 2:00am",
+				"f":"4:00pm - 2:00am",
+				"sa":"4:00pm - 2:00am",
+				"su":"Closed"
+			},
+			"website":"www.theseahorsetavern.ca",
+			"cuisines":[
+				"Pubs",
+				"Music Venues",
+				"Dance Clubs"
+				
+			],
+			"rating":4,
+			"price":2
+		},
+		{
+			"name":"Java Blend Coffee Roasters",
+			"address":"6027 North Street",
+			"latitude":"44.65439",
+			"longitude":"-63.595418",
+			"phone":"(902) 423-6944",
+			"hours":{
+				"m":"7:00am - 6:00pm",
+				"tu":"7:00am - 6:00pm",
+				"w":"7:00am - :00pm",
+				"th":"7:00am - 6:00pm",
+				"f":"7:00am - 6:00pm",
+				"sa":"7:30am- 5:00pm",
+				"su":"9:00am - 3:00pm"
+			},
+			"website":"www.javablendcoffee.com",
+			"cuisines":[
+				"Coffee and Tea"
+				
+			],
+			"rating":5,
+			"price":1
+		},
+		{
+			"name":"The Board Room Game Cafe",
+			"address":"1256 Barrington Street",
+			"latitude":"44.640857",
+			"longitude":"-63.571409",
+			"phone":"(902) 423-7545",
+			"hours":{
+				"m":"11:00pm - 12:00am",
+				"tu":"11:00pm - 12:00am",
+				"w":"11:00pm - 12:00am",
+				"th":"11:00pm - 12:00am",
+				"f":"11:00pm - 12:00am",
+				"sa":"12:00pm - 2:00am",
+				"su":"12:00pm - 12:00am"
+			},
+			"website":"www.boardroomgames.ca",
+			"cuisines":[
+				"Coffee and Tea"
+				
+			],
+			"rating":5,
+			"price":1
+		},
+		{
+			"name":"Smiling Goat Organic Espresso Bar",
+			"address":"1551 South Park Street",
+			"latitude":"44.643357",
+			"longitude":"-63.580099",
+			"phone":"(902) 446-3366",
+			"hours":{
+				"m":"8:00am - 7:00pm",
+				"tu":"8:00am - 7:00pm",
+				"w":"8:00am - 7:00pm",
+				"th":"8:00am - 7:00pm",
+				"f":"8:00am - 7:00pm",
+				"sa":"9:00am - 6:00pm",
+				"su":"9:00am - 6:00pm"
+			},
+			"website":"www.smilinggoat.ca",
+			"cuisines":[
+				"Coffee and Tea"
+				
+			],
+			"rating":4,
+			"price":2
+		},
+		{
+			"name":"The Wooden Monkey",
+			"address":"1707 Grafton Street",
+			"latitude":"44.646956",
+			"longitude":"-63.57541",
+			"phone":"(902) 444-3844",
+			"hours":{
+				"m":"Closed",
+				"tu":"11:30am - 9:00pm",
+				"w":"11:30am - 9:00pm",
+				"th":"11:30am - 9:00pm",
+				"f":"11:30am - 10:00pm",
+				"sa":"11:30am - 10:00pm",
+				"su":"11:30am - 9:00pm"
+			},
+			"website":"www.smilinggoat.ca",
+			"cuisines":[
+				"Vegan",
+				"Vegetarian",
+				"Gastropub"
+				
+			],
+			"rating":4,
+			"price":2
+		},
+		{
+			"name":"Tom's Little Havana Cafe",
+			"address":"5428 Doyle Street",
+			"latitude":"44.643724",
+			"longitude":"-63.575758",
+			"phone":"(902) 423-8867",
+			"hours":{
+				"m":"11:30am - 2:00am",
+				"tu":"11:30am - 2:00am",
+				"w":"11:30am - 2:00am",
+				"th":"11:30am - 2:00am",
+				"f":"11:30am - 2:00am",
+				"sa":"11:30am - 2:00am",
+				"su":"11:30am - 2:00am"
+			},
+			"website":"www.tommslittlehavana.wix.com/cafe",
+			"cuisines":[
+				"American",
+				"Pubs"
+				
+			],
+			"rating":5,
+			"price":2
+		},
+		{
+			"name":"Rogues Roost",
+			"address":"5435 Spring Garden Road",
+			"latitude":"44.643514",
+			"longitude":"-63.575877",
+			"phone":"(902) 429-2337",
+			"hours":{
+				"m":"4:00pm - 12:00am",
+				"tu":"11:30am - 1:00am",
+				"w":"11:30am - 1:00am",
+				"th":"11:30am - 2:00am",
+				"f":"11:30am - 2:00am",
+				"sa":"11:30am - 2:00am",
+				"su":"12:00pm - 2:00am"
+			},
+			"website":"www.roguesroost.ca",
+			"cuisines":[
+				"American",
+				"Pubs"
+				
+			],
+			"rating":3,
+			"price":2
+		},
+		{
+			"name":"The Old Triangle",
+			"address":"5136 Prince Street",
+			"latitude":"44.647594",
+			"longitude":"-63.572253",
+			"phone":"(902) 492-4900",
+			"hours":{
+				"m":"11:00am - 12:00am",
+				"tu":"11:00am - 1:00am",
+				"w":"11:00am - 1:00am",
+				"th":"11:00am - 2:00am",
+				"f":"11:00am - 2:00am",
+				"sa":"11:00am - 2:00am",
+				"su":"11:30am - 12:00am"
+			},
+			"website":"www.oldtriangle.com",
+			"cuisines":[
+				"Pubs"
+				
+			],
+			"rating":4,
+			"price":2
+		},
+		{
+			"name":"Baba Ghanouji Cafe",
+			"address":"1335 Barrington St",
+			"latitude":"44.642483",
+			"longitude":"-63.571507",
+			"phone":"(902) 455-3144",
+			"hours":{
+				"m":"8:00am - 8:00pm",
+				"tu":"8:00am - 8:00pm",
+				"w":"8:00am - 8:00pm",
+				"th":"8:00am - 8:00pm",
+				"f":"8:00am - 8:00pm",
+				"sa":"9:00am - 8:00pm",
+				"su":"9:00am - 8:00pm"
+			},
+			"website":"www.babaghannouj.ca",
+			"cuisines":[
+				"Middle Eastern",
+				"Halal"
+				
+			],
+			"rating":4,
+			"price":1
 		}
 	]
 }

@@ -24,7 +24,7 @@
 	<body>
 		<div class="content">
 			<p>You should eat at:</p>
-			<h1 id="restaurantName">Restaurant Name</h1>
+			<h1 id="restaurantName"></h1>
 			<div class="restaurantDescription">
 				<div class="descriptionIcons" id="restaurantRating"></div>
 				<p class="descriptionIcons" id="restaurantDistance"></p>
@@ -66,48 +66,52 @@
 			</div>
 			<h3>Cuisines</h3>
 			<div id="img-wrapper">
-				<div class="cuisine">
-					<div class="overlay">Breakfast</div>
+				<div class="cuisine" onclick="selectCuisine('Breakfast')">
+					<div class="overlay" id="breakfast"><p>Breakfast</p></div>
 					<img src="images/breakfast.jpg" alt="Breakfast">
 				</div>
-				<div class="cuisine">
-					<div class="overlay">Burgers</div>
+				<div class="cuisine" onclick="selectCuisine('Burgers')">
+					<div class="overlay" id="burgers"><p>Burgers</p></div>
 			 		<img src="images/burger.jpg" alt="Burger">
 			 	</div>
-			 	<div class="cuisine">
-			 		<div class="overlay">Dessert</div>
+			 	<div class="cuisine" onclick="selectCuisine('Dessert')">
+			 		<div class="overlay" id="dessert"><p>Dessert</p></div>
 			 		<img src="images/dessert.jpg" alt="Dessert">
 			 	</div>
-			 	<div class="cuisine">
-			 		<div class="overlay">Indian</div>
+			 	<div class="cuisine" onclick="selectCuisine('Gluten-Free')">
+			 		<div class="overlay" id="gluten-free"><p>Gluten Free</p></div>
+			 		<img src="images/gluten-free.jpg" alt="Gluten Free">
+			 	</div>
+			 	<div class="cuisine" onclick="selectCuisine('Indian')">
+			 		<div class="overlay" id="indian"><p>Indian</p></div>
 			 		<img src="images/indian.jpg" alt="Indian">
 				</div>
-			 	<div class="cuisine">
-			 		<div class="overlay">Italian</div>
+			 	<div class="cuisine" onclick="selectCuisine('Italian')">
+			 		<div class="overlay" id="italian"><p>Italian</p></div>
 			 		<img src="images/italian.jpg" alt="Italian">
 			 	</div>
-			 	<div class="cuisine">
-			 		<div class="overlay">Mexican</div>
+			 	<div class="cuisine" onclick="selectCuisine('Mexican')">
+			 		<div class="overlay" id="mexican"><p>Mexican</p></div>
 			 		<img src="images/mexican.jpg" alt="Mexican">
 			 	</div>
-			 	<div class="cuisine">
-			 		<div class="overlay">Pizza</div>
+			 	<div class="cuisine" onclick="selectCuisine('Pizza')">
+			 		<div class="overlay" id="pizza"><p>Pizza</p></div>
 			 		<img src="images/pizza.jpg" alt="Pizza">
 			 	</div>
-			 	<div class="cuisine">
-			 		<div class="overlay">Seafood</div>
+			 	<div class="cuisine" onclick="selectCuisine('Seafood')">
+			 		<div class="overlay" id="seafood"><p>Seafood</p></div>
 			 		<img src="images/seafood.jpg" alt="Seafood">
 			 	</div>
-			 	<div class="cuisine">
-			 		<div class="overlay">Steak</div>
+			 	<div class="cuisine" onclick="selectCuisine('Steak')">
+			 		<div class="overlay" id="steak"><p>Steak</p></div>
 			 		<img src="images/steak.jpg" alt="Steak">
 			 	</div>
-			 	<div class="cuisine">
-			 		<div class="overlay">Sushi</div>
+			 	<div class="cuisine" onclick="selectCuisine('Sushi')">
+			 		<div class="overlay" id="sushi"><p>Sushi</p></div>
 			 		<img src="images/sushi.jpg" alt="Sushi">
 			 	</div>
-			 	<div class="cuisine">
-			 		<div class="overlay">Thai</div>
+			 	<div class="cuisine" onclick="selectCuisine('Thai')">
+			 		<div class="overlay" id="thai"><p>Thai</p></div>
 			 		<img src="images/thai.jpg" alt="Thai">
 			 	</div>
 		 	</div>

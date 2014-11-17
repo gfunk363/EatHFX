@@ -1,6 +1,7 @@
 var previousSuggestions = [];
 var selectedRating = 0;
 var indexList = [];
+var cuisinesSelected = [];
 $(document).ready(function () {
 	pickRestaurant();
     /****************************************************************
@@ -224,7 +225,7 @@ function validateRestaurants(restaurants, price, rating, distance, cuisine){
 	for (var i = 0; i < restaurants.length; i++) {
 		cuisineFound = false;
 		var restaurant = restaurants[i];
-		if(price != null && restaurant.price > price){
+		if(price != null && restaurant.price > price || restaurant.price < price -1){
 			indexList[i] = false;
 		} 
 		if(rating != null && restaurant.rating < rating){
@@ -310,4 +311,13 @@ function getRating(){
 	if(icon == "rgb(255, 0, 0)") return 1;
 
 	return null;
+}
+function selectCuisine(cuisineName){
+	var cuisineLC = cuisineName.toLowerCase();
+	if($.inArray(cuisineName, cuisinesSelected) == -1){
+		cuisinesSelected.push(cuisineName);
+		$("#" + cuisineLC).css("height", "25%");
+	}else{
+		$("#" + cuisineLC).css("height", "100%");
+	}
 }
