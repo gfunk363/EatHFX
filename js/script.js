@@ -131,7 +131,12 @@ function pickRestaurant(){
 		}
 
 		//validateRestaurants(restaurants, price, rating, distance, cuisine)
-		validateRestaurants(json.restaurants, getPrice(), getRating(), null, null);
+		if(cuisinesSelected.length > 0){
+			validateRestaurants(json.restaurants, getPrice(), getRating(), null, cuisinesSelected);
+		}else{
+			validateRestaurants(json.restaurants, getPrice(), getRating(), null, null);
+		}
+		
 
 		//Random number
 		var pickedIndex = false;
@@ -318,6 +323,7 @@ function selectCuisine(cuisineName){
 		cuisinesSelected.push(cuisineName);
 		$("#" + cuisineLC).css("height", "25%");
 	}else{
+		cuisinesSelected.splice($.inArray(cuisineName, cuisinesSelected), 1);
 		$("#" + cuisineLC).css("height", "100%");
 	}
 }
