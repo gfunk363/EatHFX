@@ -185,6 +185,9 @@ function displayRestaurant(restaurant){
 	var restaurantName = restaurant.name;
 	$("#restaurantName").text(restaurantName);
 
+	//Set cookie to name of restaurant
+	$.cookie('restaurant', restaurantName);
+
 	//Get restaurant rating
 	var restaurantRating = restaurant.rating;
 	$("#restaurantRating").empty();
@@ -226,7 +229,7 @@ function displayRestaurant(restaurant){
 	placeSelfOnMap();
 }
 function validateRestaurants(restaurants, price, rating, distance, cuisine){
-	var cuisineFound;
+	var cuisineFound, cuisineName;
 	for (var i = 0; i < restaurants.length; i++) {
 		cuisineFound = false;
 		var restaurant = restaurants[i];
@@ -237,12 +240,11 @@ function validateRestaurants(restaurants, price, rating, distance, cuisine){
 			indexList[i] = false;
 		}
 		if(cuisine != null){
-			for (var j = 0; j < restaurant.cuisines.length; j++) {
-				for (var k = 0; k < cuisine.length; k++) {
-					if(restaurant.cuisines[j] == cuisine[k]){
-						cuisineFound = true;
-					}
-				};
+			for (var j = 0; j < restaurant.cuisines.length; j++) {	
+				cuisineName = restaurant.cuisines[j];
+				if($.inArray(cuisineName, cuisinesSelected) != -1){
+					cuisineFound = true;
+				}
 			}
 			if(!cuisineFound) indexList[i] = false;
 		}
@@ -259,7 +261,6 @@ function placeSelfOnMap(){
 			}).click(function() {
 				$('#map_canvas').gmap('openInfoWindow', { 
 					'content': 'You are here!',
-
 				}, this);
 			});
 		}else{

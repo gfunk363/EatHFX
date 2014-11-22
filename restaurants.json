@@ -107,7 +107,9 @@
 				"su":"10am-2.30pm 5pm-10pm"
 			},
 			"website":"ednarestaurant.com",
-			"cuisines":"ednarestaurant.com",
+			"cuisines":[
+				"Canadian"
+			],
 			"rating":4,
 			"price":3
 		},
@@ -127,7 +129,9 @@
 				"su":"4:00 pm - 10:00 pm"
 			},
 			"website":"kingwah.ca",
-			"cuisines":"Chinese",
+			"cuisines":[
+				"Chinese"
+			],
 			"rating":3,
 			"price":2
 		},
@@ -149,7 +153,7 @@
 			"website":"thefoggygoggle.ca",
 			"cuisines":[
 				"Canadian",
-				"Pubs"
+				"Pub"
 			],
 			"rating":4,
 			"price":2
@@ -194,7 +198,7 @@
 			},
 			"website":"freemanspizza.ca",
 			"cuisines":[
-				"Pubs",
+				"Pub",
 				"Pizza"
 			],
 			"rating":4,
@@ -216,7 +220,9 @@
 				"su":"10am-2pm 5pm-9pm"
 			},
 			"website":"morriseast.com",
-			"cuisines":"Pizza",
+			"cuisines":[
+				"Pizza"
+			],
 			"rating":4,
 			"price":2
 		},
@@ -269,8 +275,8 @@
 		{
 			"name":"9 + Nine",
 			"address":"480 Parkland Drive",
-			"latitude":"42.655465",
-			"longitude":"-83.142313",
+			"latitude":"44.670936",
+			"longitude":"-63.676582",
 			"phone":"(902) 431-7575",
 			"hours":{
 				"m":"11am-2pm 5pm-9pm",
@@ -282,7 +288,9 @@
 				"su":"4:30pm-9:30pm"
 			},
 			"website":"9plus9.ca",
-			"cuisines":"Chinese",
+			"cuisines":[
+				"Chinese"
+			],
 			"rating":4,
 			"price":2
 		},
@@ -302,7 +310,9 @@
 				"su":"12:00am-9:00pm"
 			},
 			"website":"aceburger.ca",
-			"cuisines":"Burgers",
+			"cuisines":[
+				"Burgers"
+			],
 			"rating":5,
 			"price":2
 		},
@@ -322,7 +332,9 @@
 				"su":"4:00pm - 9:00pm"
 			},
 			"website":"blueolivegreektaverna.com",
-			"cuisines":"Greek",
+			"cuisines":[
+				"Greek"
+			],
 			"rating":4,
 			"price":2
 		},
@@ -342,7 +354,9 @@
 				"su":"4:00pm - 11:00pm"
 			},
 			"website":"thefireside.ca",
-			"cuisines":"Canadian",
+			"cuisines":[
+				"Canadian"
+			],
 			"rating":3,
 			"price":2
 		},
@@ -362,7 +376,9 @@
 				"su":"11:30am-9:30pm"
 			},
 			"website":"relishyou.ca",
-			"cuisines":"Burgers",
+			"cuisines":[
+				"Burgers"
+			],
 			"rating":3,
 			"price":2
 		},
@@ -383,7 +399,7 @@
 			},
 			"website":"twoifbyseacafe.ca",
 			"cuisines":[
-				"Coffee & Tea",
+				"Coffee-Tea",
 				"Bakeries"
 			],
 			"rating":5,
@@ -454,12 +470,11 @@
 			"website":"www.il-mercato.ca",
 			"cuisines":[
 				"Italian"
-				
 			],
 			"rating":5,
 			"price":3
 		},
-{
+		{
 			"name":"Chives Canadian Bistro",
 			"address":"1537 Barrington street",
 			"latitude":"44.645002",
@@ -477,13 +492,11 @@
 			"website":"www.chives.ca",
 			"cuisines":[
 				"Canadian"
-			
 			],
 			"rating":4,
 			"price":3
 		},
-
-{
+		{
 			"name":"The Press Gang",
 			"address":"5218 Prince street",
 			"latitude":"44.647021",
@@ -502,13 +515,11 @@
 			"cuisines":[
 				"Bars",
 				"Seafood"
-			
 			],
 			"rating":4,
 			"price":3
 		},
-
-{
+		{
 			"name":"Wasabi House",
 			"address":"6403 Quinpool Road",
 			"latitude":"44.644598",
@@ -526,13 +537,11 @@
 			"website":"www.wasabihouse.ca",
 			"cuisines":[
 				"Sushi"
-			
 			],
 			"rating":4,
 			"price":2
 		},
-
-{
+		{
 			"name":"Stories Fine Dining",
 			"address":"5184 Morris Street",
 			"latitude":"44.641722",
@@ -550,13 +559,11 @@
 			"website":"www.storiesdining.com",
 			"cuisines":[
 				"Canadian"
-			
 			],
 			"rating":5,
 			"price":4
 		},
-
-{
+		{
 			"name":"Durty Nelly’s",
 			"address":"1660 Argyle st",
 			"latitude":"44.646402",
@@ -575,13 +582,11 @@
 			"cuisines":[
 				"Irish",
 				"Pub"
-			
 			],
 			"rating":4,
 			"price":2
 		},
-
-{
+		{
 			"name":"Thai Ivory Cuisine",
 			"address":"6303 Quinpool Road",
 			"latitude":"44.645134",
@@ -598,14 +603,12 @@
 			},
 			"website":"www.thaiivoryvusine.ca",
 			"cuisines":[
-				"Thai"
-				
+				"Thai"	
 			],
 			"rating":4,
 			"price":2
 		},
-
-	{
+		{
 			"name":"Burrito Jax",
 			"address":"5215 Blowers Street",
 			"latitude":"44.645204",
@@ -622,16 +625,13 @@
 			},
 			"website":"www.burritojax.ca",
 			"cuisines":[
-				"Mexican"
-				
+				"Mexican"	
 			],
 			"rating":4,
 			"price":1
 		},
-
-
-{
-			"name":"Your father’s Mustache",
+		{
+			"name":"Your Father’s Mustache",
 			"address":"5886 Spring Garden Road",
 			"latitude":"44.642272",
 			"longitude":"-63.579238",
@@ -653,8 +653,7 @@
 			"rating":4,
 			"price":2
 		},
-
-	{
+		{
 			"name":"Sweet Hereafter",
 			"address":"6148 Quinpool Road",
 			"latitude":"44.646029",
@@ -678,8 +677,7 @@
 			"rating":4,
 			"price":2
 		},
-
-{
+		{
 			"name": "Fruition",
 			"address":"1209 Marginal Road",
 			"latitude":"44.640212",
@@ -702,7 +700,6 @@
 			"rating":5,
 			"price":2
 		},
-
 		{
 			"nam":"Heartwood",
 			"address":"6250 Quinpool Road",
@@ -727,7 +724,6 @@
 			"rating":4,
 			"price":2
 		},
-
 		{
 			"name":"Mid East Food Centre",
 			"address":"2595 Agricola Street",
@@ -770,7 +766,6 @@
 			"website":"www.mezzarestaurant.com",
 			"cuisines":[
 				"Lebanese"
-				
 			],
 			"rating":4,
 			"price":2
@@ -792,9 +787,8 @@
 			},
 			"website":"www.rockbottombrewpub.ca",
 			"cuisines":[
-				"Pubs",
+				"Pub",
 				"Breweries"
-				
 			],
 			"rating":3,
 			"price":2
@@ -816,10 +810,9 @@
 			},
 			"website":"www.theseahorsetavern.ca",
 			"cuisines":[
-				"Pubs",
+				"Pub",
 				"Music Venues",
 				"Dance Clubs"
-				
 			],
 			"rating":4,
 			"price":2
@@ -841,8 +834,7 @@
 			},
 			"website":"www.javablendcoffee.com",
 			"cuisines":[
-				"Coffee and Tea"
-				
+				"Coffee-Tea"
 			],
 			"rating":5,
 			"price":1
@@ -864,8 +856,7 @@
 			},
 			"website":"www.boardroomgames.ca",
 			"cuisines":[
-				"Coffee and Tea"
-				
+				"Coffee-Tea"
 			],
 			"rating":5,
 			"price":1
@@ -887,8 +878,7 @@
 			},
 			"website":"www.smilinggoat.ca",
 			"cuisines":[
-				"Coffee and Tea"
-				
+				"Coffee-Tea"
 			],
 			"rating":4,
 			"price":2
@@ -913,7 +903,6 @@
 				"Vegan",
 				"Vegetarian",
 				"Gastropub"
-				
 			],
 			"rating":4,
 			"price":2
@@ -936,8 +925,7 @@
 			"website":"www.tommslittlehavana.wix.com/cafe",
 			"cuisines":[
 				"American",
-				"Pubs"
-				
+				"Pub"
 			],
 			"rating":5,
 			"price":2
@@ -960,8 +948,7 @@
 			"website":"www.roguesroost.ca",
 			"cuisines":[
 				"American",
-				"Pubs"
-				
+				"Pub"
 			],
 			"rating":3,
 			"price":2
@@ -983,8 +970,7 @@
 			},
 			"website":"www.oldtriangle.com",
 			"cuisines":[
-				"Pubs"
-				
+				"Pub"
 			],
 			"rating":4,
 			"price":2
@@ -1008,10 +994,33 @@
 			"cuisines":[
 				"Middle Eastern",
 				"Halal"
-				
 			],
 			"rating":4,
 			"price":1
+		},
+		{
+			"name":"Flip Burger",
+			"address":"1565 Argyle Street",
+			"latitude":"44.645185",
+			"longitude":"-63.573791",
+			"phone":"(902) 431-3547",
+			"hours":{
+				"m":"11:00 am - 10:00 pm",
+				"tu":"11:00 am - 10:00 pm",
+				"w":"11:00 am - 10:00 pm",
+				"th":"11:00 am - 4:00 am",
+				"f":"11:00 am - 4:00 am",
+				"sa":"11:00 am - 4:00 am",
+				"su":"11:00 am - 10:00 pm"
+			},
+			"website":"www.flipburger.ca",
+			"cuisines":[
+				"Burgers",
+				"Beer",
+				"Wine-Spirits"
+			],
+			"rating":4,
+			"price":2
 		}
 	]
 }
