@@ -328,3 +328,30 @@ function selectCuisine(cuisineName){
 		$("#" + cuisineLC).css("height", "100%");
 	}
 }
+function clearAll(){
+	var cuisineName;
+	for(var i = 0; i < cuisinesSelected.length; i++){
+		cuisineName = cuisinesSelected[i].toLowerCase();
+		$("#" + cuisineName).css("height", "100%");
+	}
+
+	cuisinesSelected = [];
+
+	$("#price1").css( "color", "black" );
+	$("#price2").css( "color", "black" );
+	$("#price3").css( "color", "black" );
+	$("#price4").css( "color", "black" );
+	$("#price5").css( "color", "black" );
+
+	$("#star1").css( "color", "black" );
+	$("#star2").css( "color", "black" );
+	$("#star3").css( "color", "black" );
+	$("#star4").css( "color", "black" );
+	$("#star5").css( "color", "black" );
+
+	$("#distance1").css( "color", "black" );
+	$("#distance2").css( "color", "black" );
+	$("#distance3").css( "color", "black" );
+	$("#distance4").css( "color", "black" );
+	$("#distance5").css( "color", "black" );
+}
