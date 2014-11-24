@@ -1,16 +1,3 @@
-$(function(){
-	SyntaxHighlighter.all();
-});
-$(window).load(function(){
-	$('.flexslider').flexslider({
-		animation: "slide",
-		controlNav: "thumbnails",
-		start: function(slider){
-			$('body').removeClass('loading');
-		}
-	});
-});
-
 $(document).ready(function () {
 	$.getJSON("restaurants.json", function(json){//Get jSON document
 		var restaurantName = $.cookie('restaurant');
@@ -27,6 +14,22 @@ $(document).ready(function () {
 		}
 
 		$("#restaurantName").text(restaurantName);
+
+		//Get restaurant rating
+		var restaurantRating = restaurant.rating;
+		for (var i = 0; i < restaurantRating; i++) {
+			$('#restaurantRating').append(
+			    "<i class=\"fa fa-star\"></i>"
+			); 
+		}
+
+		//Get restaurant price
+		var restaurantPrice = restaurant.price;
+		for (var i = 0; i < restaurantPrice; i++) {
+			$('#restaurantPrice').append(
+			    "<i class=\"fa fa-usd\"></i>"
+			); 
+		}
 
 		$('#restaurantWebsite').append(
 		    "<a href=\"http://" + restaurant.website + "\" target=\"_blank\">" 
@@ -52,6 +55,10 @@ $(document).ready(function () {
 		$("#friday").text(restaurant.hours.f);
 		$("#saturday").text(restaurant.hours.sa);
 		$("#sunday").text(restaurant.hours.su);
+
+		$('#image').append(
+		    "<img src=\"" + restaurant.image + "\" alt=\"" + restaurantName + "\">"
+		); 
 
 		//Add to map
 		$('#map_canvas').gmap('clear', 'markers');
