@@ -208,7 +208,6 @@ function displayRestaurant(restaurant){
 
 	//Add directions to map
 	$('#map_canvas').gmap('clear', 'markers');
-	$('#map_canvas').gmap({ 'center': new google.maps.LatLng(42.345573,-71.098326));
 	var currPosition;
 	$('#map_canvas').gmap('getCurrentPosition', function(position, status) {
 		if ( status === 'OK' ) {
@@ -219,6 +218,11 @@ function displayRestaurant(restaurant){
 				'travelMode': google.maps.DirectionsTravelMode.DRIVING }, { 
 				'panel': document.getElementById('directions')
 			});
+
+			var distance = google.maps.geometry.spherical.computeDistanceBetween(currPosition, new google.maps.LatLng(restaurant.latitude, restaurant.longitude));
+			distance = distance/1000.0;
+			$("#restaurantDistance").empty();
+			$("#restaurantDistance").text(Math.round(distance * 10)/10 + " km");
 		}else{
 			alert("Location could not be found!");
 				$('#map_canvas').gmap('addMarker', { 
@@ -227,6 +231,7 @@ function displayRestaurant(restaurant){
 					'animation': google.maps.Animation.DROP,
 				});
 		}
+		
 	});
 	
 }
