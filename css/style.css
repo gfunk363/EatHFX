@@ -33,6 +33,7 @@ h1{
  ****************************************************************/
 .content{
 	text-align: center;
+	font-family: "Helvetica", Arial, sans-serif;
 }
 .restaurantDescription{
 	width:500px;
@@ -54,6 +55,7 @@ button{
 	display: block;
 	margin: 20px auto 20px auto;
 	padding: 5px;
+	font: "Helvetica", Arial, sans-serif;
 }
 #img-wrapper{
     width:100%;
@@ -86,6 +88,10 @@ img{
 }
 a{
 	display: block;
+}
+button a{
+	text-decoration: none;
+	color: black;
 }
 #clearAll{
 	color: blue;

@@ -62,36 +62,26 @@ $(document).ready(function () {
 
 		//Add to map
 		$('#map_canvas').gmap('clear', 'markers');
-		$('#map_canvas').gmap('addMarker', { 
-			'position': new google.maps.LatLng(restaurant.latitude, restaurant.longitude),
-			'bounds': true,
-			'animation': google.maps.Animation.DROP,
-		}).click(function() {
-			$('#map_canvas').gmap('openInfoWindow', { 
-				'content':restaurantName
-
-			}, this);
+		//Add directions to map
+		$('#map_canvas').gmap('clear', 'markers');
+		var currPosition;
+		$('#map_canvas').gmap('getCurrentPosition', function(position, status) {
+			if ( status === 'OK' ) {
+				currPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+				$('#map_canvas').gmap('displayDirections', { 
+					'origin': currPosition, 
+					'destination': new google.maps.LatLng(restaurant.latitude, restaurant.longitude), 
+					'travelMode': google.maps.DirectionsTravelMode.DRIVING }, { 
+					'panel': document.getElementById('directions')
+				});
+			}else{
+				alert("Location could not be found!");
+					$('#map_canvas').gmap('addMarker', { 
+						'position': new google.maps.LatLng(restaurant.latitude, restaurant.longitude),
+						'bounds': true,
+						'animation': google.maps.Animation.DROP,
+					});
+			}
 		});
-		placeSelfOnMap();
-
 	});
 });
-
-function placeSelfOnMap(){
-    $('#map_canvas').gmap('getCurrentPosition', function(position, status) {
-		if ( status === 'OK' ) {
-			var currPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-			$('#map_canvas').gmap('addMarker', {
-				'position': currPosition,
-				'bounds': true,
-				'icon':new google.maps.MarkerImage('images/arrow.png')
-			}).click(function() {
-				$('#map_canvas').gmap('openInfoWindow', { 
-					'content': 'You are here!',
-				}, this);
-			});
-		}else{
-			alert("Location could not be found!");
-		}
-	});
-}

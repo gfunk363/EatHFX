@@ -206,27 +206,29 @@ function displayRestaurant(restaurant){
 		); 
 	}
 
-	//Get restaurant distance
-	/*var currPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-	var restaurantDistance = calcDistance(currPosition.latitude, 
-										  currPosition.longitude, 
-										  restaurant.latitude, 
-										  restaurant.longitude);
-	$("#restaurantDistance").text(restaurantDistance + " km away");*/
-
-	//Add to map
+	//Add directions to map
 	$('#map_canvas').gmap('clear', 'markers');
-	$('#map_canvas').gmap('addMarker', { 
-		'position': new google.maps.LatLng(restaurant.latitude, restaurant.longitude),
-		'bounds': true,
-		'animation': google.maps.Animation.DROP,
-	}).click(function() {
-		$('#map_canvas').gmap('openInfoWindow', { 
-			'content':restaurantName
-
-		}, this);
+	$('#map_canvas').gmap({ 'center': new google.maps.LatLng(42.345573,-71.098326));
+	var currPosition;
+	$('#map_canvas').gmap('getCurrentPosition', function(position, status) {
+		if ( status === 'OK' ) {
+			currPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+			$('#map_canvas').gmap('displayDirections', { 
+				'origin': currPosition, 
+				'destination': new google.maps.LatLng(restaurant.latitude, restaurant.longitude), 
+				'travelMode': google.maps.DirectionsTravelMode.DRIVING }, { 
+				'panel': document.getElementById('directions')
+			});
+		}else{
+			alert("Location could not be found!");
+				$('#map_canvas').gmap('addMarker', { 
+					'position': new google.maps.LatLng(restaurant.latitude, restaurant.longitude),
+					'bounds': true,
+					'animation': google.maps.Animation.DROP,
+				});
+		}
 	});
-	placeSelfOnMap();
+	
 }
 function validateRestaurants(restaurants, price, rating, distance, cuisine){
 	var cuisineFound, cuisineName;
@@ -249,36 +251,6 @@ function validateRestaurants(restaurants, price, rating, distance, cuisine){
 			if(!cuisineFound) indexList[i] = false;
 		}
 	}
-}
-function placeSelfOnMap(){
-    $('#map_canvas').gmap('getCurrentPosition', function(position, status) {
-		if ( status === 'OK' ) {
-			var currPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
-			$('#map_canvas').gmap('addMarker', {
-				'position': currPosition,
-				'bounds': true,
-				'icon':new google.maps.MarkerImage('images/arrow.png')
-			}).click(function() {
-				$('#map_canvas').gmap('openInfoWindow', { 
-					'content': 'You are here!',
-				}, this);
-			});
-		}else{
-			alert("Location could not be found!");
-		}
-	});
-}
-
-function calcDistance(startLat,startLong,destLat,destLong) {
-  var radius = 6371; // Radius of the earth in km
-  var dLat = (destLat-startLat) * (Math.PI/180); 
-  var dLon = (destLong-startLong) * (Math.PI/180); 
-  var calc1 = Math.sin(dLat/2) * Math.sin(dLat/2) +
-    		  Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(destLat)) * 
-    		  Math.sin(dLon/2) * Math.sin(dLon/2); 
-  var calc2 = 2 * Math.atan2(Math.sqrt(calc1), Math.sqrt(1-calc1)); 
-  var distance = radius * c; // Distance in km
-  return distance;
 }
 
 function getPrice(){
