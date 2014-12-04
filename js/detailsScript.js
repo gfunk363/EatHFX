@@ -60,20 +60,23 @@ $(document).ready(function () {
 		    "<img src=\"" + restaurant.image + "\" alt=\"" + restaurantName + "\">"
 		); 
 
-		//Add to map
-		$('#map_canvas').gmap('clear', 'markers');
 		//Add directions to map
 		$('#map_canvas').gmap('clear', 'markers');
-		var currPosition;
 		$('#map_canvas').gmap('getCurrentPosition', function(position, status) {
 			if ( status === 'OK' ) {
-				currPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+				var currPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 				$('#map_canvas').gmap('displayDirections', { 
 					'origin': currPosition, 
 					'destination': new google.maps.LatLng(restaurant.latitude, restaurant.longitude), 
 					'travelMode': google.maps.DirectionsTravelMode.DRIVING }, { 
 					'panel': document.getElementById('directions')
 				});
+
+				//Get Distance
+				var distance = google.maps.geometry.spherical.computeDistanceBetween(currPosition, new google.maps.LatLng(restaurant.latitude, restaurant.longitude));
+				distance = distance/1000.0;
+				$("#restaurantDistance").empty();
+				$("#restaurantDistance").text(Math.round(distance * 10)/10 + " km");
 			}else{
 				alert("Location could not be found!");
 					$('#map_canvas').gmap('addMarker', { 
@@ -82,6 +85,7 @@ $(document).ready(function () {
 						'animation': google.maps.Animation.DROP,
 					});
 			}
+			
 		});
 	});
 });
