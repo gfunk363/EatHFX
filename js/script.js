@@ -130,11 +130,11 @@ function pickRestaurant(){
 			indexList.push(true);
 		}
 
-		//validateRestaurants(restaurants, price, rating, distance, cuisine)
+		
 		if(cuisinesSelected.length > 0){
-			validateRestaurants(json.restaurants, getPrice(), getRating(), null, cuisinesSelected);
+			validateRestaurants(json.restaurants, getPrice(), getRating(), getDistance(), cuisinesSelected);
 		}else{
-			validateRestaurants(json.restaurants, getPrice(), getRating(), null, null);
+			validateRestaurants(json.restaurants, getPrice(), getRating(), getDistance(), null);
 		}
 		
 
@@ -208,10 +208,9 @@ function displayRestaurant(restaurant){
 
 	//Add directions to map
 	$('#map_canvas').gmap('clear', 'markers');
-	var currPosition;
 	$('#map_canvas').gmap('getCurrentPosition', function(position, status) {
 		if ( status === 'OK' ) {
-			currPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+			var currPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 			$('#map_canvas').gmap('displayDirections', { 
 				'origin': currPosition, 
 				'destination': new google.maps.LatLng(restaurant.latitude, restaurant.longitude), 
@@ -219,6 +218,7 @@ function displayRestaurant(restaurant){
 				'panel': document.getElementById('directions')
 			});
 
+			//Get Distance
 			var distance = google.maps.geometry.spherical.computeDistanceBetween(currPosition, new google.maps.LatLng(restaurant.latitude, restaurant.longitude));
 			distance = distance/1000.0;
 			$("#restaurantDistance").empty();
@@ -240,12 +240,42 @@ function validateRestaurants(restaurants, price, rating, distance, cuisine){
 	for (var i = 0; i < restaurants.length; i++) {
 		cuisineFound = false;
 		var restaurant = restaurants[i];
+
+		//Check price
 		if(price != null && restaurant.price > price || restaurant.price < price -1){
 			indexList[i] = false;
 		} 
+
+		//Check rating
 		if(rating != null && restaurant.rating < rating){
 			indexList[i] = false;
 		}
+
+		var restaurantDistance;
+		$('#map_canvas').gmap('getCurrentPosition', function(position, status) {
+			if ( status === 'OK' ) {
+				var currPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+				
+				//Get Distance
+				restaurantDistance = google.maps.geometry.spherical.computeDistanceBetween(currPosition, new google.maps.LatLng(restaurant.latitude, restaurant.longitude));
+				restaurantDistance = restaurantDistance/1000.0;
+				restaurantDistance = Math.round(restaurantDistance * 10)/10;
+			}
+		});
+		if(distance != null){
+			if(distance == 1 && restaurantDistance > 2){
+				indexList[i] = false;
+			}else if(distance == 2 && restaurantDistance > 4){
+				indexList[i] = false;
+			}else if(distance == 3 && restaurantDistance > 6){
+				indexList[i] = false;
+			}else if(distance == 4 && restaurantDistance > 8){
+				indexList[i] = false;
+			}else if(distance == 5 && restaurantDistance > 10){
+				indexList[i] = false;
+			}
+		}
+		//Check cuisines
 		if(cuisine != null){
 			for (var j = 0; j < restaurant.cuisines.length; j++) {	
 				cuisineName = restaurant.cuisines[j];
@@ -291,6 +321,25 @@ function getRating(){
 	if(icon == "rgb(255, 0, 0)") return 2;
 
 	icon = $("#star1").css("color");
+	if(icon == "rgb(255, 0, 0)") return 1;
+
+	return null;
+}
+
+function getDistance(){
+	var icon = $("#distance5").css("color");
+	if(icon == "rgb(255, 0, 0)") return 5;
+
+	icon = $("#distance4").css("color");
+	if(icon == "rgb(255, 0, 0)") return 4;
+
+	icon = $("#distance3").css("color");
+	if(icon == "rgb(255, 0, 0)") return 3;
+
+	icon = $("#distance2").css("color");
+	if(icon == "rgb(255, 0, 0)") return 2;
+
+	icon = $("#distance1").css("color");
 	if(icon == "rgb(255, 0, 0)") return 1;
 
 	return null;
