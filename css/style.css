@@ -33,7 +33,8 @@ h1{
  ****************************************************************/
 .content{
 	text-align: center;
-	font-family: "Helvetica", Arial, sans-serif;
+	font-family: 'Helvetica', sans-serif;
+ 	font-weight: 300;
 }
 .restaurantDescription{
 	width:500px;
@@ -93,8 +94,11 @@ button a{
 	text-decoration: none;
 	color: black;
 }
+button{
+	width: 400px;
+}
 #clearAll{
-	color: blue;
+	color: red;
 }
 #restaurantDistance{
 	margin: 0;
@@ -103,7 +107,7 @@ button a{
 							  MAP
  ****************************************************************/
 #map_canvas{
-    width: 500px;
+    width: 100%;
     height: 400px;
     margin: 0 auto 20px auto;
 }

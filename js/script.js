@@ -251,6 +251,7 @@ function validateRestaurants(restaurants, price, rating, distance, cuisine){
 			indexList[i] = false;
 		}
 
+		//Check distance
 		var restaurantDistance;
 		$('#map_canvas').gmap('getCurrentPosition', function(position, status) {
 			if ( status === 'OK' ) {
@@ -275,6 +276,7 @@ function validateRestaurants(restaurants, price, rating, distance, cuisine){
 				indexList[i] = false;
 			}
 		}
+
 		//Check cuisines
 		if(cuisine != null){
 			for (var j = 0; j < restaurant.cuisines.length; j++) {	
